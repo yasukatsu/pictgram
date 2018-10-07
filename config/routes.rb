@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # get 'comments/new'
   get 'sessions/new'
 
   root 'pages#index'
@@ -13,5 +14,7 @@ Rails.application.routes.draw do
 
   get 'favorites/index'
   post '/favorites', to: 'favorites#create'
+
+  resources :comments
 
 end
