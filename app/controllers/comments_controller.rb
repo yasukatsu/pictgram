@@ -1,7 +1,8 @@
 class CommentsController < ApplicationController
   def index
-    @comments = Comment.findBy
-
+    # 未検証なのでコメントアウトのまま置いてる
+    # @comments = Comment.find_by(topic_id: params[:topic_id])
+  end
 
   def new
   	@comment = Comment.new
